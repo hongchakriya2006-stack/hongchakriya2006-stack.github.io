@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FitsSchedule</title>
+<title>FitsSchedule 🐻💖</title>
 <style>
   * {
     margin: 0;
@@ -174,16 +174,10 @@
     color: white;
   }
 
-  .invite-box {
-    background: #fff0f3;
-    border-left: 4px solid #ff5c8a;
-    padding: 16px;
-    border-radius: 12px;
-  }
-
   .leaderboard {
     border-radius: 14px;
     overflow: hidden;
+    margin-top: 20px;
   }
   .leaderboard-header {
     background: #ff5c8a;
@@ -195,6 +189,11 @@
     background: #fff0f3;
     padding: 12px;
     border-bottom: 1px solid #ffccd5;
+  }
+
+  .emoji-big {
+    font-size: 26px;
+    margin-right: 6px;
   }
 </style>
 </head>
@@ -208,7 +207,7 @@
     <div class="card">
       <label>Your Name</label>
       <input id="username" placeholder="Enter your name">
-      <button class="btn" onclick="goLogin()">Login</button>
+      <button class="btn" onclick="goLogin()">Login 🎀</button>
     </div>
   </div>
 
@@ -223,8 +222,8 @@
       <label>Class End</label><input id="classEnd" type="time" value="16:30">
       <label>Wake Up</label><input id="wakeUp" type="time" value="07:00">
       <label>Bed Time</label><input id="bedTime" type="time" value="22:00">
-      <button class="btn" onclick="calcBMI()">Calculate</button>
-      <button class="btn" onclick="go(2)" style="margin-left:10px;">Next</button>
+      <button class="btn" onclick="calcBMI()">Calculate BMI 🩷</button>
+      <button class="btn" onclick="go(2)" style="margin-left:10px;">Next 🎀</button>
     </div>
     <div id="bmi-result" class="card" style="display:none;"></div>
   </div>
@@ -233,8 +232,8 @@
   <div id="p2" class="page">
     <h3>Study & Fitness 📚💪</h3>
     <div class="card">
-      <div id="dynamicSchedule"></div>
-      <button class="btn" onclick="goHome()">Go to Home</button>
+      <div id="dynamicSchedule" style="white-space: pre-line; line-height: 2;"></div>
+      <button class="btn" onclick="goHome()">Go to Home 🏠</button>
     </div>
   </div>
 
@@ -242,12 +241,12 @@
   <div id="home" class="page">
     <h3>Home Page 🏠</h3>
     <div class="home-menu">
-      <button class="home-btn" onclick="openPopup('hf')">Study & Fitness</button>
-      <button class="home-btn" onclick="openPopup('hm')">Meal Plan</button>
-      <button class="home-btn" onclick="openPopup('hw')">Workout</button>
-      <button class="home-btn" onclick="openPopup('hwe')">Weekly Plan</button>
-      <button class="home-btn" onclick="openPopup('ht')">Tutorial</button>
-      <button class="home-btn" onclick="openPopup('hl')">Leaderboard</button>
+      <button class="home-btn" onclick="openPopup('hf')">📚 Study & Fitness</button>
+      <button class="home-btn" onclick="openPopup('hm')">🍎 Meal Plan</button>
+      <button class="home-btn" onclick="openPopup('hw')">🏃 Workout</button>
+      <button class="home-btn" onclick="openPopup('hwe')">🗓 Weekly Plan</button>
+      <button class="home-btn" onclick="openPopup('ht')">🎀 Tutorial</button>
+      <button class="home-btn" onclick="openPopup('hl')">🏆 Leaderboard</button>
     </div>
   </div>
 
@@ -255,7 +254,7 @@
   <div class="popup" id="hf">
     <div class="popup-content">
       <button class="close-btn" onclick="closeAll()">×</button>
-      <h3>Study & Fitness Schedule</h3>
+      <h3>Study & Fitness Schedule 🎀</h3>
       <div class="card">
         <div id="homeSchedule" style="white-space: pre-line; line-height: 2.3; font-size: 16px;">
 07:00 - 07:20 🧘 Wake Up & Stretch
@@ -271,7 +270,7 @@
   <div class="popup" id="hm">
     <div class="popup-content">
       <button class="close-btn" onclick="closeAll()">×</button>
-      <h3>Meal Plan</h3>
+      <h3>Meal Plan 🍓</h3>
       <div class="day-tabs">
         <button class="day-btn active" onclick="meal(1)">Mon</button>
         <button class="day-btn" onclick="meal(2)">Tue</button>
@@ -288,7 +287,7 @@
   <div class="popup" id="hw">
     <div class="popup-content">
       <button class="close-btn" onclick="closeAll()">×</button>
-      <h3>Workout</h3>
+      <h3>Workout 🏃‍♀️</h3>
       <div class="card">
         <label>Duration</label>
         <select id="dur"><option>5</option><option>10</option><option>15</option><option>20</option><option>30</option></select>
@@ -300,7 +299,7 @@
           <label><input type="checkbox" class="move"> Plank</label><br>
           <label><input type="checkbox" class="move"> Burpees</label>
         </div>
-        <button class="btn" onclick="generateWorkout()">Generate</button>
+        <button class="btn" onclick="generateWorkout()">Generate 🎀</button>
         <div id="workoutResult" class="card" style="display:none;margin-top:15px;"></div>
       </div>
     </div>
@@ -309,11 +308,11 @@
   <div class="popup" id="hwe">
     <div class="popup-content">
       <button class="close-btn" onclick="closeAll()">×</button>
-      <h3>Weekly Plan</h3>
+      <h3>Weekly Plan 🗓</h3>
       <div class="card">
-        Mon-Fri: Study + 30min workout<br><br>
-        Sat: Rest<br><br>
-        Sun: Recovery
+        Mon-Fri: Study + 30min workout 💪<br><br>
+        Sat: Rest or Light Activity 🧘<br><br>
+        Sun: Recovery & Stretch 🎀
       </div>
     </div>
   </div>
@@ -321,7 +320,7 @@
   <div class="popup" id="ht">
     <div class="popup-content">
       <button class="close-btn" onclick="closeAll()">×</button>
-      <h3>Tutorial</h3>
+      <h3>Tutorial 🎀</h3>
       <div class="tutorial-grid">
         <div class="move-card"><h4>Jumping</h4><div class="anim jump">🏃</div></div>
         <div class="move-card"><h4>Squats</h4><div class="anim squat">🧎</div></div>
@@ -336,12 +335,7 @@
   <div class="popup" id="hl">
     <div class="popup-content">
       <button class="close-btn" onclick="closeAll()">×</button>
-      <h3>Leaderboard & Invite</h3>
-      <div class="invite-box">
-        <strong>Your Code:</strong>
-        <input id="mycode" readonly>
-        <button class="btn" onclick="copy()">Copy</button>
-      </div>
+      <h3>Leaderboard 🏆</h3>
       <div class="leaderboard" id="rank"></div>
     </div>
   </div>
@@ -349,7 +343,7 @@
 </div>
 
 <script>
-  let user = {}, groupCode = "";
+  let user = {};
 
   window.onload = showLogin;
   function showLogin() {
@@ -360,29 +354,51 @@
   function go(id) {
     document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
     document.getElementById('p'+id).classList.add('active');
+    if(id === 2) buildSchedule();
   }
 
   function goLogin() {
     let name = document.getElementById('username').value.trim();
-    if(!name) return alert('Please enter your name');
-    user = {name};
+    if(!name) return alert('Please enter your name 💖');
+    user.name = name;
+    user.streak = 0; // 新用户 = 0天打卡
     go(1);
   }
 
   function calcBMI() {
     let h = +document.getElementById('h').value;
     let w = +document.getElementById('w').value;
-    if(!h || !w) return alert('Fill height & weight');
+    if(!h || !w) return alert('Fill height & weight 💖');
     let bmi = (w/((h/100)**2)).toFixed(1);
-    document.getElementById('bmi-result').innerText = "Your BMI: "+bmi;
+    let msg = `Your BMI: ${bmi}\n`;
+    if(bmi < 18.5) msg += 'Underweight 💤';
+    else if(bmi < 25) msg += 'Normal 💖';
+    else if(bmi < 30) msg += 'Overweight ⚠️';
+    else msg += 'Obese ⚠️';
+    document.getElementById('bmi-result').innerText = msg;
     document.getElementById('bmi-result').style.display="block";
+  }
+
+  function buildSchedule() {
+    let wake = document.getElementById('wakeUp').value;
+    let start = document.getElementById('classStart').value;
+    let end = document.getElementById('classEnd').value;
+    let bed = document.getElementById('bedTime').value;
+    let study = document.getElementById('study').value || '2';
+
+    let s = `
+🌅 Wake Up: ${wake}
+📚 Class: ${start} ~ ${end}
+📖 Study Time: ${study} hours per day
+🏋️ After-class Workout: 40 mins
+🌙 Bed Time: ${bed}
+    `;
+    document.getElementById('dynamicSchedule').innerText = s;
   }
 
   function goHome() {
     document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
     document.getElementById('home').classList.add('active');
-    groupCode = Math.random().toString(36).slice(2,8).toUpperCase();
-    document.getElementById('mycode').value = groupCode;
     loadLeaderboard();
     meal(1);
   }
@@ -397,40 +413,51 @@
   }
 
   function meal(n) {
-    let m = [
-      ["Oatmeal","Chicken","Apple","Soup"],
-      ["Toast","Salad","Almonds","Fish"],
-      ["Smoothie","Lentil","Carrot","Turkey"],
-      ["Pudding","Wrap","Yogurt","Shrimp"],
-      ["Pancake","Bean","Orange","Noodle"],
-      ["Avocado","Bowl","Nuts","Salmon"],
-      ["Fruit","Pasta","Cheese","Soup"]
-    ][n-1];
+    document.querySelectorAll('.day-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.day-btn')[n-1].classList.add('active');
+    let meals = [
+      ["Oatmeal + Banana","Chicken Rice","Apple + Yogurt","Vegetable Soup"],
+      ["Egg Toast","Beef Salad","Almonds","Baked Fish"],
+      ["Fruit Smoothie","Lentil Soup","Carrot Sticks","Turkey Wrap"],
+      ["Chia Pudding","Chicken Wrap","Greek Yogurt","Grilled Shrimp"],
+      ["Pancake + Honey","Bean Salad","Orange","Mushroom Noodle"],
+      ["Avocado Toast","Rice Bowl","Mixed Nuts","Baked Salmon"],
+      ["Fruit Bowl","Cream Pasta","Cheese Stick","Mushroom Soup"]
+    ];
+    let m = meals[n-1];
     document.getElementById('meal-box').innerHTML =
-      `<p>Breakfast: ${m[0]}</p><p>Lunch: ${m[1]}</p><p>Snack: ${m[2]}</p><p>Dinner: ${m[3]}</p>`;
+    `<p>🍳 Breakfast: ${m[0]}</p>
+     <p>🍱 Lunch: ${m[1]}</p>
+     <p>🥨 Snack: ${m[2]}</p>
+     <p>🍽 Dinner: ${m[3]}</p>`;
   }
 
   function generateWorkout() {
-    let d = +document.getElementById('dur').value, sel=[];
+    let d = +document.getElementById('dur').value;
+    let sel = [];
     document.querySelectorAll('.move:checked').forEach(c=>sel.push(c.parentElement.innerText.trim()));
-    if(!sel.length) return alert('Choose at least one');
-    let e = Math.floor(d/sel.length), r='';
-    sel.forEach((s,i)=>r+=`${i+1}. ${s} → ${e}min\n`);
-    document.getElementById('workoutResult').innerText = r;
+    if(!sel.length) return alert('Choose at least one exercise 💖');
+    let each = Math.floor(d/sel.length);
+    let res = `Total ${d} mins\n\n`;
+    sel.forEach((s,i)=> res += `${i+1}. ${s} → ${each} min\n`);
+    document.getElementById('workoutResult').innerText = res;
     document.getElementById('workoutResult').style.display="block";
   }
 
   function loadLeaderboard() {
-    let list=[{name:'Alex',streak:28},{name:'Ben',streak:25},{name:'Cathy',streak:22},user];
-    let html='<div class="leaderboard-header">Streak</div>';
-    list.sort((a,b)=>b.streak-a.streak).forEach((u,i)=>{
-      let medal=['🥇','🥈','🥉'][i]||i+1;
-      html+=`<div class="rank-item">${medal} ${u.name} → ${u.streak||0} days</div>`;
+    let list = [
+      {name:'Alex',streak:28},
+      {name:'Ben',streak:25},
+      {name:'Cathy',streak:22},
+      user
+    ];
+    let html = '<div class="leaderboard-header">🏆 Streak Leaderboard</div>';
+    list.sort((a,b) => (b.streak||0) - (a.streak||0)).forEach((u,i)=>{
+      let medal = ['🥇','🥈','🥉'][i] || (i+1)+'.';
+      html += `<div class="rank-item">${medal} ${u.name} — ${u.streak||0} days</div>`;
     });
-    document.getElementById('rank').innerHTML=html;
+    document.getElementById('rank').innerHTML = html;
   }
-
-  function copy(){navigator.clipboard.writeText(document.getElementById('mycode').value);alert('Copied!');}
 </script>
 </body>
 </html>
